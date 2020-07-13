@@ -10,20 +10,22 @@ import numpy as np
 import re
 from tkinter.filedialog import askopenfilename,asksaveasfilename
 
-def reverse_complement(dna):
-    complement = {'A': 'T', 'C': 'G', 'G': 'C', 'T': 'A'}
-    return ''.join([complement[base] for base in dna[::-1]])
+#Function for finding the reverse compliment of a sequence.
+def reverse_complement(seq):
+    complement_dict = {'A': 'T', 'C': 'G', 'G': 'C', 'T': 'A'}
+    return ''.join([complement_dict[base] for base in seq[::-1]])
 
 
-
-path = askopenfilename()
+# input FASTA file containing the genome sequence
+path = askopenfilename(title = "Please select the fasta file")
 
 my_file = open(path)
 my_file_contents = my_file.read()
 my_file.close()
 
-gene_file_path = askopenfilename()
-strt_stop = pd.read_csv(gene_file_path)
+#Input the annotation (CSV file)
+annotation_file_path = askopenfilename(title = "Please select the Annotation file (CSV)")
+strt_stop = pd.read_csv(annotation_file_path)
 
 genome_seq=re.sub('>.*?\n','',my_file_contents)
 
@@ -34,6 +36,7 @@ genome_seq=genome_seq.replace('\n','')
 a = list(strt_stop['Start'])
 b = list(strt_stop['Stop'])
 
+#Printing out the results as per annotaions
 for i in range(0,len(a)):
     if (strt_stop['Strand'][i].strip() == ' -'):
         if (a[i]-1 > b[i]):
@@ -48,8 +51,10 @@ for i in range(0,len(a)):
 
 
 
+
 #writing to a file      
-file1 = open(asksaveasfilename(),"a")#append mode  
+file1 = open(asksaveasfilename(defaultextension='.txt',filetypes=(("Text Document",".txt"),("Word Document",".docx"),("All files","*.*"))),"a")#append mode 
+
 for i in range(0,len(a)):
     if (strt_stop['Strand'][i].strip() == '-'):
         if (a[i]-1 > b[i]):
@@ -64,10 +69,3 @@ for i in range(0,len(a)):
 file1.close() 
 
 print('Done')
-
-
-
-
-
-
-
