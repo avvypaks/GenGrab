@@ -7,8 +7,8 @@ The is a user friendly bioinformatic tool to extract required gene segments from
 ## Getting started
 ### Installation
 * The simplest way to set this up is to install the Anaconda Python distribution
-* Otherwise, install the following dependencies:
-- Pandas
-- tkinter
-- numpy
+* Otherwise, install the following dependencies: 1. pandas
+                                                 2. tkinter
+                                                 3. numpy
+
 
