@@ -22,6 +22,12 @@ The is a user friendly bioinformatic tool to extract required gene segments from
 * Give the genome sequence (test_genome.fas) from the dialog box just opened.
 * Give the gene boundaries in the required format(test_boundary.csv) to run the program.
 * Save the output file in required path from the dialog box.
+## Feedback to contributors
+* **Goirik Dasgupta** @goirikdg
+* **Avas Pakrashi** @avvy_paks
+## Acknowledgments
+* Code used :
+* Thankful to Dr. Kailash Chandra, Director of Zoological Survey of India.
 
 
 
