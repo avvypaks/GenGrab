@@ -26,7 +26,7 @@ The is a bioinformatic tool to extract required gene segments from the entire ge
 * **Goirik Dasgupta** @goirikdg
 * **Avas Pakrashi** @avvy_paks
 ## Acknowledgments
-* Code used :
+* Code used : https://codereview.stackexchange.com/questions/151329/reverse-complement-of-a-dna-string/151333
 * Thankful to Dr. Kailash Chandra, Director of Zoological Survey of India.
 
 
