@@ -48,8 +48,6 @@ for i in range(0,len(a)):
 
 
 
-# - reverse + forward        
-#
 #writing to a file      
 file1 = open(asksaveasfilename(),"a")#append mode  
 for i in range(0,len(a)):
