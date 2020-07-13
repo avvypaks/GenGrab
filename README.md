@@ -10,5 +10,18 @@ The is a user friendly bioinformatic tool to extract required gene segments from
 * Otherwise, install the following dependencies: 1. pandas
                                                  2. tkinter
                                                  3. numpy
+### Running the program
+* Unzip the program folder
+* Open Anaconda prompt
+* Type “python“ followed by a space
+* Drag and drop the “gengrab.py” file (which is in the folder you just unzipped) onto the command prompt.
+`code`
+python “<gengrab.py>”
+* Hit enter
+* Give the genome sequence (test_genome.fas) from the dialog box just opened.
+* Give the gene boundaries in the required format(test_boundary.csv) to run the program.
+* Save the output file in required path from the dialog box.
+
+
 
 
