@@ -9,11 +9,12 @@ import pandas as pd
 import numpy as np
 import re
 from tkinter.filedialog import askopenfilename,asksaveasfilename
+from tkinter import messagebox as mb
 
 #Function for finding the reverse compliment of a sequence.
 def reverse_complement(seq):
-    complement_dict = {'A': 'T', 'C': 'G', 'G': 'C', 'T': 'A'}
-    return ''.join([complement_dict[base] for base in seq[::-1]])
+    complement = {'A': 'T', 'C': 'G', 'G': 'C', 'T': 'A', 'R':'R', 'Y':'Y'}
+    return ''.join([complement[base] for base in dna[::-1]])
 
 
 # input FASTA file containing the genome sequence
@@ -68,4 +69,5 @@ for i in range(0,len(a)):
             file1.write(">"+strt_stop['Gene'][i]+"\n"+genome_seq[a[i]-1:b[i]]+"\n\n")
 file1.close() 
 
-print('Done')
+#pop up message after completion
+mb.showinfo('Info','Done')
