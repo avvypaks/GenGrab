@@ -14,7 +14,7 @@ from tkinter import messagebox as mb
 #Function for finding the reverse compliment of a sequence.
 def reverse_complement(seq):
     complement = {'A': 'T', 'C': 'G', 'G': 'C', 'T': 'A', 'R':'R', 'Y':'Y'}
-    return ''.join([complement[base] for base in dna[::-1]])
+    return ''.join([complement[base] for base in seq[::-1]])
 
 
 # input FASTA file containing the genome sequence
