@@ -27,7 +27,8 @@ The package has two modules:
 Add all the annotated gene resuts in a single csv file to prepare the "gene separation file"
 * Type python followed by a space in Anaconda Prompt
 * Drag and drop the “gengrab2.py” file on the command prompt to run the program
-          `python "<gengrab2.py>"` 
+         
+         `python "<gengrab2.py>"` 
 * Give the gene separation file (test_gene_separation.csv) from the dialog box
 * Enter the gene name you want to filter
 * Hit enter to run the code
