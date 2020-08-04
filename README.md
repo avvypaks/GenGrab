@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/279230081.svg)](https://zenodo.org/badge/latestdoi/279230081)
+
 # GenGrab
 The is a bioinformatic tool to extract required gene segments from the entire genome according to defined gene boundary and for genome dataset preparation
 ## Description
